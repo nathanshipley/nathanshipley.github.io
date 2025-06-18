@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Shipley - Web Tools</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 60px;
+            font-weight: 400;
+        }
+        
+        .tools-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #999;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .tool-item {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .tool-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .tool-thumbnail {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 1px solid #eee;
+            background-color: #f8f8f8;
+        }
+        
+        .tool-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s ease;
+        }
+        
+        .tool-item:hover .tool-thumbnail img {
+            transform: scale(1.05);
+        }
+        
+        .tool-content {
+            flex: 1;
+            padding-top: 10px;
+        }
+        
+        .tool-link {
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 8px;
+            transition: opacity 0.2s ease;
+        }
+        
+        .tool-link:hover {
+            opacity: 0.6;
+        }
+        
+        .tool-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .personal-link {
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
+            transition: opacity 0.2s ease;
+        }
+        
+        .personal-link:hover {
+            opacity: 0.6;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+            
+            .subtitle {
+                margin-bottom: 40px;
+            }
+            
+            .tool-item {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .tool-thumbnail {
+                width: 100%;
+                height: 200px;
+                max-width: 300px;
+            }
+            
+            .tool-content {
+                padding-top: 0;
+            }
+            
+            .tool-link {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Nathan Shipley</h1>
+    <p class="subtitle">Web Tools & Experiments</p>
+    
+    <div class="tools-section">
+        <h2 class="section-title">Tools</h2>
+        
+        <div class="tool-item">
+            <a href="https://nathanshipley.github.io/particleGridAnimator/" class="tool-thumbnail">
+                <img src="images/particleGridAnimator.png" alt="Particle Grid Animator preview">
+            </a>
+            <div class="tool-content">
+                <a href="https://nathanshipley.github.io/particleGridAnimator/" class="tool-link">Particle Grid Animator</a>
+                <p class="tool-description">Interactive particle grid animation tool for creating dynamic visual effects</p>
+            </div>
+        </div>
+        
+        <div class="tool-item">
+            <a href="https://nathanshipley.github.io/after-effects-keyframes-to-comfy/" class="tool-thumbnail">
+                <img src="images/AEtoComfy.png" alt="After Effects Keyframes to ComfyUI preview">
+            </a>
+            <div class="tool-content">
+                <a href="https://nathanshipley.github.io/after-effects-keyframes-to-comfy/" class="tool-link">After Effects Keyframes to ComfyUI</a>
+                <p class="tool-description">Convert After Effects keyframe data for use in ComfyUI workflows</p>
+            </div>
+        </div>
+        
+        <!-- Add more tools here as needed -->
+        <!--
+        <div class="tool-item">
+            <a href="https://nathanshipley.github.io/your-new-tool/" class="tool-thumbnail">
+                <img src="images/your-tool-thumbnail.png" alt="New Tool preview">
+            </a>
+            <div class="tool-content">
+                <a href="https://nathanshipley.github.io/your-new-tool/" class="tool-link">New Tool Name</a>
+                <p class="tool-description">Brief description of what the tool does</p>
+            </div>
+        </div>
+        -->
+    </div>
+    
+    <footer>
+        <a href="https://www.nathanshipley.com/" class="personal-link">nathanshipley.com →</a>
+    </footer>
+</body>
+</html>
